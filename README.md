@@ -56,7 +56,12 @@ with other log data.
 ## Usage 
 Using the appender is easy, just log using log4net as you normally would. Note that this is a buffered appender, so log messages may not 
 be written immediately. You can override this behavior at the expense of performace using the log4net **immediateFlush** configuration 
-element. See [this[(http://logging.apache.org/log4net/release/sdk/log4net.Appender.TextWriterAppender.ImmediateFlush.html) page for more information.
+element. See [this](http://logging.apache.org/log4net/release/sdk/log4net.Appender.TextWriterAppender.ImmediateFlush.html) page for more information.
+
+For example:
+```
+<immediateFlush value="true" />
+```
 
 ## Building the Project Yourself
 Clone the repository, open log4net.dynamodb.sln in Visual Studio, select the desired configuration, and click Build -> 
