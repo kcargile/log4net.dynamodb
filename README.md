@@ -76,8 +76,7 @@ log4net.dynamodb is written in C# and requires the MS.NET Framework version 4.0.
 is log4net, which will be installed automatically by Nuget when you build the solution.
 
 ## Issues
-If you find an bug please [open an issue](https://github.com/kcargile/log4net.dynamodb/issues) or alternatively contact 
-me via my [blog](http://www.kriscargile.com).
+If you find an bug please [open an issue](https://github.com/kcargile/log4net.dynamodb/issues).
 
 ## License
 See LICENSE. Copyright (c) 2013, Cargile Technology Group, LLC.
