@@ -42,16 +42,20 @@ added as needed when a LoggingEvent is sent to your DynamoDb table.
 The following parameters are available in the appender configuration:
 ```
 <tableName value="log-app" />
-The name of the table that messages will be written to.
+```
+This is the name of the table that messages will be written to.
 
+```
 <tablePrefix value="unittest-" />
+```
 A table prefix that will be automatically appended to the tableName property. This can be an empty string or can be 
 ommitted altogther. Useful for varying configuration transformations used during unit testing, etc.
 
+```
 <serializeExceptions value="false" />
+```
 If set to true, a binary serialized version of any actual exception messages will be written to the database along 
-with other log data.
-``` 
+with other log data. 
 
 ## Usage 
 Using the appender is easy, just log using log4net as you normally would. Note that this is a buffered appender, so log messages may not 
