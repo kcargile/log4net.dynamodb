@@ -16,9 +16,9 @@ For example:
 <log4net debug="true">
 	<root>
 		<level value="ALL" />
-		<appender-ref ref="DynmoDbAppender" />
+		<appender-ref ref="DynamoDbAppender" />
 	</root>
-	<appender name="DynmoDbAppender" type="log4net.Appender.DynamoDbAppender, log4net.dynamodb">
+	<appender name="DynamoDbAppender" type="log4net.Appender.DynamoDbAppender, log4net.dynamodb">
 		<tableName value="log-app" />
 		<tablePrefix value="unittest-" />
 		<serializeExceptions value="false" />
@@ -39,7 +39,7 @@ You must configure a table in DynamoDb using the AWS Console or CLI tools, the a
 that you will have both a hash key named "Id" (type string) and a range key named "TimeStamp" (type string). Other columns will be 
 added as needed when a LoggingEvent is sent to your DynamoDb table.
 
-The following parameters are available in the appender configuration:
+The following addtional parameters are available in the appender configuration:
 ```
 <tableName value="log-app" />
 ```
@@ -49,7 +49,7 @@ This is the name of the table that messages will be written to.
 <tablePrefix value="unittest-" />
 ```
 A table prefix that will be automatically appended to the tableName property. This can be an empty string or can be 
-ommitted altogther. Useful for varying configuration transformations used during unit testing, etc.
+ommitted altogther. Useful for varying configuration transformations used during unit testing, CI, etc.
 
 ```
 <serializeExceptions value="false" />
@@ -59,7 +59,7 @@ with other log data.
 
 ## Usage 
 Using the appender is easy, just log using log4net as you normally would. Note that this is a buffered appender, so log messages may not 
-be written immediately. You can override this behavior at the expense of performace using the log4net **immediateFlush** configuration 
+be written immediately. You can override this behavior at the (substantial) expense of performace using log4net's **immediateFlush** configuration 
 element. See [this](http://logging.apache.org/log4net/release/sdk/log4net.Appender.TextWriterAppender.ImmediateFlush.html) page for more information.
 
 For example:
@@ -72,7 +72,7 @@ Clone the repository, open log4net.dynamodb.sln in Visual Studio, select the des
 Build Solution (F6). Alternatively, you can build from the command line using csc or MSBuild.
 
 ## Dependencies
-log4net.correlationPatternConverter is written in C# and requires the MS.NET Framework version 4.0. The only other external dependency
+log4net.dynamodb is written in C# and requires the MS.NET Framework version 4.0. The only other external dependency
 is log4net, which will be installed automatically by Nuget when you build the solution.
 
 ## Issues
