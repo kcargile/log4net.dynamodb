@@ -1,15 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.dynamodb", "log4net.dynamodb.csproj", "{D5B98419-7691-463A-8F7C-2B3D13F89233}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.dynamodb", "log4net.dynamodb\log4net.dynamodb.csproj", "{D5B98419-7691-463A-8F7C-2B3D13F89233}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.dynamodb.Tests", "..\log4net.dynamodb.Tests\log4net.dynamodb.Tests.csproj", "{124F6BFD-BC2C-43EA-B834-11E4BFD82095}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.dynamodb.Tests", "log4net.dynamodb.Tests\log4net.dynamodb.Tests.csproj", "{124F6BFD-BC2C-43EA-B834-11E4BFD82095}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D48C1CF4-AD23-43D4-A017-1626831E71C5}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F9108CE4-5098-4B94-8B3E-256B6F3DC842}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		log4net.dynamodb\log4net.dynamodb.nuspec = log4net.dynamodb\log4net.dynamodb.nuspec
+		nuget-package.bat = nuget-package.bat
+		README.md = README.md
+		readme.txt = readme.txt
 	EndProjectSection
 EndProject
 Global

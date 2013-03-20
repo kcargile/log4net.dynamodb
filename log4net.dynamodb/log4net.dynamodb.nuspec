@@ -10,8 +10,12 @@
     <projectUrl>https://github.com/kcargile/log4net.dynamodb</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Initial relese.</releaseNotes>
+    <releaseNotes>Update package readme, add license file.</releaseNotes>
     <copyright>Copyright (c) 2013 Cargile Technology Group, LLC</copyright>
     <tags>log4net dynamodb aws</tags>
   </metadata>
+  <files>
+    <file src="..\readme.txt" target="" />
+    <file src="..\LICENSE" target="LICENSE" />
+  </files>
 </package>
