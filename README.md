@@ -1,4 +1,4 @@
-log4net.dynamodb
+# log4net.dynamodb
 ================
 
 An Amazon Web Services DynamoDb log4net appender.
@@ -30,9 +30,10 @@ For example:
 ```
 
 Addtionally, you must set the **AWSAccessKey** and **AWSSecretKey** configuration elements in the appConfig section of your App.config or 
-Web.config file for authentication to DynamoDb. See the AWS documentation for more information. These release notes http://aws.amazon.com/releasenotes/.NET/7526512651260522 are a good starting point.
+Web.config file for authentication to DynamoDb. See the AWS documentation for more information. [These release notes](http://aws.amazon.com/releasenotes/.NET/7526512651260522) 
+are a good starting point.
 
-See App.config in the test project for a complete configuration example.
+See App.config in the test project for a more complete configuration example.
 
 You must configure a table in DynamoDb using the AWS Console or CLI tools, the appender will not do this for you. The appender expects 
 that you will have both a hash key named "Id" (type string) and a range key named "TimeStamp" (type string). Other columns will be 
@@ -44,17 +45,18 @@ The following parameters are available in the appender configuration:
 The name of the table that messages will be written to.
 
 <tablePrefix value="unittest-" />
-A table prefix that will be automatically appended to the tableName property. This can be an empty string or ommitted altogther. Useful 
-for varying configuration transformations used during unit testing, etc.
+A table prefix that will be automatically appended to the tableName property. This can be an empty string or can be 
+ommitted altogther. Useful for varying configuration transformations used during unit testing, etc.
 
 <serializeExceptions value="false" />
-If set to true, a binary serialized version of any actual exception messages will be written to the database along with other log data.
+If set to true, a binary serialized version of any actual exception messages will be written to the database along 
+with other log data.
 ``` 
 
 ## Usage 
 Using the appender is easy, just log using log4net as you normally would. Note that this is a buffered appender, so log messages may not 
 be written immediately. You can override this behavior at the expense of performace using the log4net **immediateFlush** configuration 
-element. See this http://logging.apache.org/log4net/release/sdk/log4net.Appender.TextWriterAppender.ImmediateFlush.html page for more information.
+element. See [this[(http://logging.apache.org/log4net/release/sdk/log4net.Appender.TextWriterAppender.ImmediateFlush.html) page for more information.
 
 ## Building the Project Yourself
 Clone the repository, open log4net.dynamodb.sln in Visual Studio, select the desired configuration, and click Build -> 
