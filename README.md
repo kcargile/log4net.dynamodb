@@ -16,9 +16,9 @@ For example:
 <log4net debug="true">
 	<root>
 		<level value="ALL" />
-		<appender-ref ref="DynmoDbAppender" />
+		<appender-ref ref="DynamoDbAppender" />
 	</root>
-	<appender name="DynmoDbAppender" type="log4net.Appender.DynamoDbAppender, log4net.dynamodb">
+	<appender name="DynamoDbAppender" type="log4net.Appender.DynamoDbAppender, log4net.dynamodb">
 		<tableName value="log-app" />
 		<tablePrefix value="unittest-" />
 		<serializeExceptions value="false" />
