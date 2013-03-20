@@ -49,7 +49,7 @@ This is the name of the table that messages will be written to.
 <tablePrefix value="unittest-" />
 ```
 A table prefix that will be automatically appended to the tableName property. This can be an empty string or can be 
-ommitted altogther. Useful for varying configuration transformations used during unit testing, etc.
+ommitted altogther. Useful for varying configuration transformations used during unit testing, CI, etc.
 
 ```
 <serializeExceptions value="false" />
