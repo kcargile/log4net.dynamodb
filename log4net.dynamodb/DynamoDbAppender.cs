@@ -59,6 +59,8 @@ namespace log4net.Appender
         {
             TableName = DefaultTableName;
             SerializeExceptions = false;
+
+            ActivateOptions();
         }
 
         /// <summary>
