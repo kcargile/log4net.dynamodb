@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("log4net.dynamodb")]
-[assembly: AssemblyDescription("log4net appender for Amazon Web Services DynamoDb databases.")]
+[assembly: AssemblyDescription("log4net appender for Amazon Web Services (AWS) DynamoDb databases.")]
 [assembly: AssemblyCompany("Kristopher Cargile")]
 [assembly: AssemblyProduct("log4net.dynamodb")]
 [assembly: AssemblyCopyright("Copyright © 2013 Cargile Technology Group, LLC")]

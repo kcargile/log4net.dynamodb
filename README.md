@@ -78,6 +78,19 @@ For example, using the standard log4net layout:
 </log4net>
 ```
 
+For each parameter element:
+
+```
+<name value="Id" />
+```
+The **name** element specifies the corresponding DynamoDb column, and,
+
+```
+<type value="S" />
+```
+The **type** element specifies the corresponding DynamoDb type. Currently the S, N, and B types are supported. Omitting this element 
+will default the column to the S (string) type.
+
 Additionally, custom parameters can be writen to Dynamo using **ThreadContext.Properties[]**. For example, you could write a binary 
 object by adding the following line to of code to your application (the "myapp:" predicate has no special meaning to log4net; it is 
 used only for disambiguation):
