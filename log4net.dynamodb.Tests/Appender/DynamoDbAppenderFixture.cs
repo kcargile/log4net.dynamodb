@@ -17,7 +17,8 @@ namespace log4net.Tests.Appender
             Config.XmlConfigurator.Configure();
 
             // an example of how you can append custom properties and pick the up 
-            // in the parameter list see the App.config file for pattern.
+            // in the parameter list see the App.config file for pattern. the 
+            // readme.md file also has more information about how this works.
             ThreadContext.Properties["log4net:CorrelationId"] = Guid.NewGuid();
 
             // using a numeric field
@@ -26,7 +27,7 @@ namespace log4net.Tests.Appender
             // using a binary field
             ThreadContext.Properties["log4net:ImportantObject"] = new Tuple<string, int>("Number", 42);
 
-            // log it
+            // log it; the actual exception will also be seriialized and logged in this configuration
             Assert.DoesNotThrow(() => Logger.Error("An error occured.", new ApplicationException("You did something stupid!")));
         }
     }
