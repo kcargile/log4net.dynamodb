@@ -8,7 +8,7 @@
     <ProjectGuid>{124F6BFD-BC2C-43EA-B834-11E4BFD82095}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>log4net.Appender.Tests</RootNamespace>
+    <RootNamespace>log4net.Tests</RootNamespace>
     <AssemblyName>log4net.dynamodb.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -54,11 +54,15 @@
     <Compile Include="..\GlobalAssemblyInfo.cs">
       <Link>Properties\GlobalAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="DynamoDbAppenderFixture.cs" />
+    <Compile Include="Appender\DynamoDbAppenderFixture.cs" />
+    <Compile Include="Appender\DynamoDbAttributeBuilderFixture.cs" />
+    <Compile Include="Extensions\ObjectExtensionsFixture.cs" />
+    <Compile Include="Extensions\StringExtensionsFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Layout\.empty" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

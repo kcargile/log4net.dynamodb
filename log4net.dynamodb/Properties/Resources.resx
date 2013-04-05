@@ -120,4 +120,10 @@
   <data name="CantLogToDynamo" xml:space="preserve">
     <value>Couldn't write log messages to Dynamo: {0}</value>
   </data>
+  <data name="ItemNotNumeric" xml:space="preserve">
+    <value>Item is not numeric.</value>
+  </data>
+  <data name="StringCannotBeEmpty" xml:space="preserve">
+    <value>Value cannot be empty.</value>
+  </data>
 </root>

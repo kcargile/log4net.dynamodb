@@ -1,0 +1,28 @@
+log4net.dyanmodb Release Notes
+==============================
+
+------------------------
+Version 2.0 (2013-04-05)
+------------------------
+Add this file.
+Adjust namespaces.
+Added support for N and B datatypes.
+Support custom schemas by making the appender templated.
+Removed hardcoded ID column. Hash keys columns can be defined using parameters.
+Removed parallel calls that were causing data loss of ThreadContext.Properties[] items.
+Fixed ActivateOptions not loading configuration properly.
+Introduced DynamoDbDataWriter.
+Introduced NewGuidPatternLayoutConverter.
+Added support for non-default DynamoDb service endpoints (thanks mrbelk! https://gist.github.com/mrbelk/5316122)
+
+--------------------------
+Version 1.0.1 (2013-03-20)
+--------------------------
+Added readme to distributable.
+
+------------------------
+Version 1.0 (2013-03-19)
+------------------------
+Initial Release
+
+

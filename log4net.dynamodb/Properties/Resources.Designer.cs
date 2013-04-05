@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace log4net.Appender.Properties {
+namespace log4net.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace log4net.Appender.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("log4net.Appender.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("log4net.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -66,6 +66,24 @@ namespace log4net.Appender.Properties {
         internal static string CantLogToDynamo {
             get {
                 return ResourceManager.GetString("CantLogToDynamo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Item is not numeric..
+        /// </summary>
+        internal static string ItemNotNumeric {
+            get {
+                return ResourceManager.GetString("ItemNotNumeric", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Value cannot be empty..
+        /// </summary>
+        internal static string StringCannotBeEmpty {
+            get {
+                return ResourceManager.GetString("StringCannotBeEmpty", resourceCulture);
             }
         }
     }
