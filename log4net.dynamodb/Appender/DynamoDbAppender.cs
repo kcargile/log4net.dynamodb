@@ -46,7 +46,6 @@ namespace log4net.Appender
         {
             Parameters = new List<DynamoDbAppenderParameter>();
             TableName = DefaultTableName;
-            ActivateOptions();
         }
 
         /// <summary>
@@ -106,28 +105,6 @@ namespace log4net.Appender
         {
             DisposeDataWriter();
             base.OnClose();
-        }
-
-        /// <summary>
-        /// Initialize the appender based on the options set
-        /// </summary>
-        /// <remarks>
-        /// 	<para>
-        /// This is part of the <see cref="T:log4net.Core.IOptionHandler"/> delayed object
-        /// activation scheme. The <see cref="M:log4net.Appender.BufferingAppenderSkeleton.ActivateOptions"/> method must
-        /// be called on this object after the configuration properties have
-        /// been set. Until <see cref="M:log4net.Appender.BufferingAppenderSkeleton.ActivateOptions"/> is called this
-        /// object is in an undefined state and must not be used.
-        /// </para>
-        /// 	<para>
-        /// If any of the configuration properties are modified then
-        /// <see cref="M:log4net.Appender.BufferingAppenderSkeleton.ActivateOptions"/> must be called again.
-        /// </para>
-        /// </remarks>
-        public override void ActivateOptions()
-        {
-            base.ActivateOptions();
-            DataWriter = new DynamoDbDataWriter();
         }
 
         /// <summary>
