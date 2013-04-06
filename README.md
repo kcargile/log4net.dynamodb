@@ -136,7 +136,7 @@ DynamoDb region (http://dynamodb.us-east-1.amazonaws.com).
 See App.config in the test project for a complete configuration example.
 
 ## AWS Setup
-You must configure a table in DynamoDb using the AWS Console or CLI tools, the appender will not do this for you. The appender does not expect  
+You must configure a table in DynamoDb using the AWS Console or CLI tools, the appender will not do this for you. The appender does not expect 
 any specific schema, you control this by defining parameters in your configuration file. Columns will be added as needed when a LoggingEvent is 
 sent to your DynamoDb table, and your schema can be jagged.
 
