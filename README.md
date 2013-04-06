@@ -93,7 +93,7 @@ will default the column to the S (string) type.
 
 Additionally, custom parameters can be writen to Dynamo using **ThreadContext.Properties[]**. For example, you could write a binary 
 object by adding the following line to of code to your application (the "myapp:" predicate has no special meaning to log4net; it is 
-used only for disambiguation):
+used only for disambiguation and you are free to change this to something meaningful to your application):
 ```
 ThreadContext.Properties["myapp:ImportantObject"] = new Tuple<string, int>("Number", 42);
 ```
