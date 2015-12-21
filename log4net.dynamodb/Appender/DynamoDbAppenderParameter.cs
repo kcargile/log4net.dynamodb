@@ -1,4 +1,4 @@
-﻿using Amazon.DynamoDB.Model;
+﻿using Amazon.DynamoDBv2.Model;
 using log4net.Core;
 using log4net.Extensions;
 using log4net.Layout;
