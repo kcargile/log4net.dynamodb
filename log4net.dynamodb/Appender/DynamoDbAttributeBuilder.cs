@@ -2,7 +2,7 @@
 using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using Amazon.DynamoDB.Model;
+using Amazon.DynamoDBv2.Model;
 using Microsoft.VisualBasic;
 using log4net.Core;
 using log4net.Extensions;
