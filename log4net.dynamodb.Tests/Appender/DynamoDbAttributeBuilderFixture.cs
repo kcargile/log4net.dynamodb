@@ -2,9 +2,9 @@
 using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using Amazon.DynamoDB.Model;
-using NUnit.Framework;
+using Amazon.DynamoDBv2.Model;
 using log4net.Appender;
+using NUnit.Framework;
 
 namespace log4net.Tests.Appender
 {
