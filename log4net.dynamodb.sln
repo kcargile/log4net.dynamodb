@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.dynamodb", "log4net.dynamodb\log4net.dynamodb.csproj", "{D5B98419-7691-463A-8F7C-2B3D13F89233}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.dynamodb.Tests", "log4net.dynamodb.Tests\log4net.dynamodb.Tests.csproj", "{124F6BFD-BC2C-43EA-B834-11E4BFD82095}"
