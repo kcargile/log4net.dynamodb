@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
-using Amazon.DynamoDB;
-using Amazon.DynamoDB.Model;
+using Amazon.DynamoDBv2;
+using Amazon.DynamoDBv2.Model;
 using log4net.Extensions;
 
 namespace log4net.Appender
