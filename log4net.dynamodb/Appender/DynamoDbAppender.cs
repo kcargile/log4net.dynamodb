@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Amazon.DynamoDB.Model;
+using Amazon.DynamoDBv2.Model;
 using log4net.Core;
 
 namespace log4net.Appender
